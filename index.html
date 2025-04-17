@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Opticals - Best Eye Care & Eyewear in Rohini, Delhi</title>
+    <meta name="description" content="Premium eye care services, prescription glasses, sunglasses & contact lenses in Rohini, Delhi. Book appointments online, expert eye testing available. Visit Shivam Opticals today!">
+    <meta name="keywords" content="eye care, opticals, eyewear, glasses, sunglasses, contact lenses, eye testing, Rohini, Delhi, Shivam Opticals">
+    <meta name="author" content="Shivam Opticals">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Shivam Opticals - Premier Eye Care in Delhi">
+    <meta property="og:description" content="Quality eyewear and professional eye care services in Rohini, Delhi. Book your eye test today!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1572635196237-14b3f281503f">
+    <meta property="og:url" content="https://www.shivamopticals.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://www.shivamopticals.com">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="chat.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Optician",
+      "name": "Shivam Opticals",
+      "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f",
+      "description": "Premier eye care and eyewear services in Rohini, Delhi",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Shop no-113 pocket, 13, Pocket 13, Sector-24",
+        "addressLocality": "Rohini",
+        "addressRegion": "Delhi",
+        "postalCode": "110085",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 28.7162,
+        "longitude": 77.1173
+      },
+      "url": "https://www.shivamopticals.com",
+      "telephone": "+919953149890",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "10:00",
+        "closes": "19:00"
+      },
+      "priceRange": "₹₹",
+      "serviceType": ["Eye Testing", "Prescription Glasses", "Contact Lenses", "Sunglasses"]
+    }
+    </script>
+    <script>
+        // Add your JavaScript code here
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Document is ready!');
+        });
+
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWCpREoC3Bp_UIVVq4dTtnBC8yTXC1SfM&libraries=places"></script>
+    <script src="maps.js"></script>
+    <script src="calendar.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=150&h=150" alt="Sunglasses Logo" class="logo-image">
+            <h1>Shivam Opticals</h1>
+        </div>
+        <nav>
+            <button onclick="scrollToSection('about')">About</button>
+            <button onclick="window.location.href='products.html'">Shop</button>
+            <button onclick="window.location.href='blog.html'">Blog</button>
+            <button onclick="scrollToSection('services')">Services</button>
+            <button onclick="scrollToSection('contact')">Contact</button>
+            <button onclick="window.location.href='loginpage.html'" class="auth-btn login-btn">Login</button>
+            <button onclick="window.location.href='signup.html'" class="auth-btn signup-btn">Sign Up</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Your Vision, Our Mission | Shivam Opticals Delhi</h1>
+            <p>Expert eye care and premium eyewear solutions in Rohini, Delhi. Professional eye testing, prescription glasses, and designer sunglasses available.</p>
+            <div class="hero-image-grid">
+                <img src="https://images.unsplash.com/" alt="Modern Eyewear Display" class="hero-image">
+                <img src="https://images.unsplash.com/photo-1587334207407-deb137c997e1" alt="Stylish Glasses Collection" class="hero-image">
+                <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083" alt="Designer Sunglasses" class="hero-image">
+            </div>
+            <div class="hero-buttons">
+                <button class="cta-btn" onclick="scrollToSection('contact')">Contact Us</button>
+                <button class="cta-btn shop-btn" onclick="window.location.href='products.html'">Shop Now</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Delhi's Trusted Eye Care Specialists</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to Shivam Opticals, your premier destination for comprehensive eye care in Rohini, Delhi. With years of expertise, state-of-the-art equipment, and a commitment to excellence, we provide personalized eye care solutions for every patient.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1617352076194-57c856c8ec53" alt="Modern Optical Store Interior" class="about-image">
+            </div>
+        </section>
+
+        <section id="services" itemscope itemtype="http://schema.org/MedicalOrganization">
+            <h2>Our Expert Eye Care Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="https://images.unsplash.com/photo-1587334207407-deb137c997e1" alt="Eye Testing Service" class="service-image">
+                    <h3 itemprop="medicalSpecialty">Comprehensive Eye Testing</h3>
+                    <p>Advanced equipment for accurate vision assessment</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://images.unsplash.com/ alt="Premium Eyewear Collection" class="service-image">
+                    <h3 itemprop="medicalSpecialty">Custom Prescription Glasses</h3>
+                    <p>Premium lenses and stylish frames</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a" alt="Contact Lens Collection" class="service-image">
+                    <h3 itemprop="medicalSpecialty">Contact Lenses and Fitting</h3>
+                    <p>High-quality contact lenses with expert fitting</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083" alt="Designer Sunglasses Collection" class="service-image">
+                    <h3 itemprop="medicalSpecialty">Designer Sunglasses</h3>
+                    <p>Premium sunglasses with UV protection</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Address: Shop no-113 pocket, 13, Pocket 13, Sector-24, Rohini, Delhi, 110085</p>
+            <p>Phone: +91 9953149890</p>
+            <p>Email: info@shivamopticals.com</p>
+        </section>
+
+        <section id="location">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <div id="map"></div>
+                <div class="search-container">
+                    <input id="places-search" type="text" placeholder="Search nearby optical stores">
+                    <button onclick="searchNearbyStores()">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="appointments">
+            <h2>Book an Appointment</h2>
+            <div class="appointment-container">
+                <div id="appointment-calendar">
+                    <!-- Calendar will be initialized here -->
+                </div>
+                <div class="appointment-info">
+                    <h3>Appointment Guidelines</h3>
+                    <ul>
+                        <li>Eye examinations available Monday to Saturday</li>
+                        <li>Each appointment is 30 minutes</li>
+                        <li>Please arrive 10 minutes before your appointment</li>
+                        <li>Bring your previous prescription if available</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <address>
+                    <p>Shop no-113 pocket, 13</p>
+                    <p>Pocket 13, Sector-24</p>
+                    <p>Rohini, Delhi, 110085</p>
+                    <p>Phone: <a href="tel:+919953149890">+91 9953149890</a></p>
+                    <p>Email: <a href="mailto:info@shivamopticals.com">info@shivamopticals.com</a></p>
+                </address>
+            </div>
+            <div class="footer-section">
+                <h3>Business Hours</h3>
+                <p>Monday - Saturday: 10:00 AM - 7:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <nav>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#appointments">Book Appointment</a>
+                    <a href="products.html">Shop</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shivam Opticals. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="chat-widget" class="chat-widget">
+        <button id="chat-toggle" class="chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div id="chat-box" class="chat-box hidden">
+            <div class="chat-header">
+                <h3>AI Assistant</h3>
+                <button id="close-chat" class="close-chat">&times;</button>
+            </div>
+            <div id="chat-messages" class="chat-messages"></div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-message">Send</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

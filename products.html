@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Premium Eyewear & Sunglasses | Shivam Opticals Shop</title>
+    <meta name="description" content="Shop premium eyewear, designer sunglasses, contact lenses & accessories at Shivam Opticals, Delhi. Best prices on prescription glasses and UV-protected sunglasses.">
+    <meta name="keywords" content="buy glasses, prescription glasses, sunglasses, contact lenses, eyewear shop, Delhi, Rohini, designer frames">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Premium Eyewear Collection - Shivam Opticals Shop">
+    <meta property="og:description" content="Discover our exclusive collection of eyewear, sunglasses & contact lenses. Quality products at best prices.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1572635196237-14b3f281503f">
+    <meta property="og:url" content="https://www.shivamopticals.com/products">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://www.shivamopticals.com/products">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Shivam Opticals Shop",
+      "description": "Premium eyewear store offering prescription glasses, sunglasses, and contact lenses",
+      "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Shop no-113 pocket, 13, Pocket 13, Sector-24",
+        "addressLocality": "Rohini",
+        "addressRegion": "Delhi",
+        "postalCode": "110085",
+        "addressCountry": "IN"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "lowPrice": "1299",
+        "highPrice": "9999",
+        "offerCount": "100+"
+      }
+    }
+    </script>
+    <style>
+        .products-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #0a2540;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.3rem;
+            color: #007bff;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .product-description {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 12px;
+            background: #0a2540;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background: #007bff;
+        }
+
+        .cart-icon {
+            position: fixed;
+            top: 100px;
+            right: 30px;
+            background: #0a2540;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .cart-icon:hover {
+            transform: scale(1.1);
+            background: #007bff;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #ffd700;
+            color: #0a2540;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .filters {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            border: 2px solid #0a2540;
+            border-radius: 20px;
+            background: transparent;
+            color: #0a2540;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: #0a2540;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shivam Opticals</h1>
+        <nav>
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="window.location.href='products.html'" class="active">Shop</button>
+            <button onclick="window.location.href='blog.html'">Blog</button>
+            <button onclick="scrollToSection('services')">Services</button>
+            <button onclick="scrollToSection('contact')">Contact</button>
+            <button onclick="window.location.href='loginpage.html'" class="auth-btn login-btn">Login</button>
+            <button onclick="window.location.href='signup.html'" class="auth-btn signup-btn">Sign Up</button>
+        </nav>
+    </header>
+
+    <main class="products-container">
+        <h1>Premium Eyewear Collection</h1>
+        <p class="products-description">Discover our extensive range of high-quality eyewear, including prescription glasses, designer sunglasses, and contact lenses. All products come with quality guarantee and expert fitting service.</p>
+        
+        <div class="filters" role="navigation" aria-label="Product filters">
+            <button class="filter-btn active" data-category="all">All Products</button>
+            <button class="filter-btn" data-category="eyeglasses">Prescription Glasses</button>
+            <button class="filter-btn" data-category="sunglasses">Designer Sunglasses</button>
+            <button class="filter-btn" data-category="contact-lenses">Contact Lenses</button>
+            <button class="filter-btn" data-category="accessories">Accessories</button>
+        </div>
+
+        <div class="products-grid" itemscope itemtype="http://schema.org/ItemList">
+            <!-- Product Cards with Schema.org markup -->
+            <div class="product-card" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="https://via.placeholder.com/300x200" alt="Classic Round Eyeglasses" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name" itemprop="name">Classic Round Eyeglasses</h3>
+                    <div class="product-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="priceCurrency" content="INR">
+                        <span itemprop="price">2499</span>
+                    </div>
+                    <p class="product-description" itemprop="description">Timeless round frame design with premium quality materials.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="https://via.placeholder.com/300x200" alt="Sunglasses" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name" itemprop="name">Premium Aviator Sunglasses</h3>
+                    <div class="product-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="priceCurrency" content="INR">
+                        <span itemprop="price">3999</span>
+                    </div>
+                    <p class="product-description" itemprop="description">UV protected aviator style sunglasses with polarized lenses.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="https://via.placeholder.com/300x200" alt="Contact Lenses" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name" itemprop="name">Monthly Contact Lenses</h3>
+                    <div class="product-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="priceCurrency" content="INR">
+                        <span itemprop="price">1299</span>
+                    </div>
+                    <p class="product-description" itemprop="description">Comfortable monthly disposable contact lenses.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Add more product cards here -->
+        </div>
+    </main>
+
+    <div class="cart-icon">
+        <i class="fas fa-shopping-cart fa-lg"></i>
+        <span class="cart-count">0</span>
+    </div>
+
+    <script>
+        // Cart functionality
+        let cartCount = 0;
+        const cartCountElement = document.querySelector('.cart-count');
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                cartCount++;
+                cartCountElement.textContent = cartCount;
+                // Add animation to cart icon
+                const cartIcon = document.querySelector('.cart-icon');
+                cartIcon.style.transform = 'scale(1.2)';
+                setTimeout(() => {
+                    cartIcon.style.transform = 'scale(1)';
+                }, 200);
+            });
+        });
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                // Add filter logic here
+            });
+        });
+    </script>
+</body>
+</html>

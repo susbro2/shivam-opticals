@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Disallow: /chat.js
+Disallow: /server.js
+Disallow: /script.js
+Disallow: /maps.js
+Disallow: /calendar.js
+
+# Allow important pages
+Allow: /index.html
+Allow: /products.html
+Allow: /signup.html
+Allow: /loginpage.html
+
+# Sitemap location
+Sitemap: https://www.shivamopticals.com/sitemap.xml

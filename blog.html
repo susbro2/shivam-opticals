@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Opticals - Eye Care Blog</title>
+    <meta name="description" content="Read expert articles about eye care, vision health, eyewear trends, and eye care tips from Shivam Opticals, Delhi's trusted eye care specialists.">
+    <meta name="keywords" content="eye care blog, vision health, eyewear trends, eye care tips, Delhi, Rohini">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=150&h=150" alt="Sunglasses Logo" class="logo-image">
+            <h1>Shivam Opticals</h1>
+        </div>
+        <nav>
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="window.location.href='products.html'">Shop</button>
+            <button onclick="window.location.href='blog.html'" class="active">Blog</button>
+            <button onclick="scrollToSection('contact')">Contact</button>
+            <button onclick="window.location.href='loginpage.html'" class="auth-btn login-btn">Login</button>
+            <button onclick="window.location.href='signup.html'" class="auth-btn signup-btn">Sign Up</button>
+        </nav>
+    </header>
+
+    <main class="blog-container">
+        <section class="blog-hero">
+            <h1>Eye Care Insights & Tips</h1>
+            <p>Expert advice on vision health, eyewear trends, and eye care best practices</p>
+        </section>
+
+        <section class="blog-categories">
+            <button class="category-btn active" data-category="all">All Posts</button>
+            <button class="category-btn" data-category="eye-health">Eye Health</button>
+            <button class="category-btn" data-category="eyewear">Eyewear Trends</button>
+            <button class="category-btn" data-category="tips">Care Tips</button>
+            <button class="category-btn" data-category="news">News</button>
+        </section>
+
+        <div class="blog-grid">
+            <!-- Featured Post -->
+            <article class="blog-post featured">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=800&h=400" alt="Understanding Digital Eye Strain">
+                    <span class="category-tag">Eye Health</span>
+                </div>
+                <div class="post-content">
+                    <h2>Understanding Digital Eye Strain: Causes and Prevention</h2>
+                    <p class="post-meta">April 18, 2025 • 5 min read</p>
+                    <p class="post-excerpt">Learn about the impact of digital devices on your eyes and effective ways to prevent eye strain in the digital age.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Regular Posts -->
+            <article class="blog-post">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1577744486770-020ab432da65?auto=format&fit=crop&w=400&h=250" alt="Sunglasses Guide">
+                    <span class="category-tag">Eyewear Trends</span>
+                </div>
+                <div class="post-content">
+                    <h2>Summer 2025 Sunglasses Guide</h2>
+                    <p class="post-meta">April 15, 2025 • 3 min read</p>
+                    <p class="post-excerpt">Discover the hottest sunglasses trends for Summer 2025 and find your perfect style.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-post">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&w=400&h=250" alt="Contact Lens Care">
+                    <span class="category-tag">Care Tips</span>
+                </div>
+                <div class="post-content">
+                    <h2>Essential Contact Lens Care Tips</h2>
+                    <p class="post-meta">April 12, 2025 • 4 min read</p>
+                    <p class="post-excerpt">Learn proper contact lens care techniques to maintain eye health and comfort.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-post">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1616296425622-4560a2ad2d5e?auto=format&fit=crop&w=400&h=250" alt="Children's Eye Health">
+                    <span class="category-tag">Eye Health</span>
+                </div>
+                <div class="post-content">
+                    <h2>Children's Eye Health: What Parents Should Know</h2>
+                    <p class="post-meta">April 10, 2025 • 6 min read</p>
+                    <p class="post-excerpt">Important information about children's vision development and eye care.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+
+        <div class="pagination">
+            <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+            <div class="page-numbers">
+                <span class="current">1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span class="dots">...</span>
+                <a href="#">8</a>
+            </div>
+            <button class="pagination-btn">Next <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <address>
+                    <p>Shop no-113 pocket, 13</p>
+                    <p>Pocket 13, Sector-24</p>
+                    <p>Rohini, Delhi, 110085</p>
+                    <p>Phone: <a href="tel:+919953149890">+91 9953149890</a></p>
+                    <p>Email: <a href="mailto:info@shivamopticals.com">info@shivamopticals.com</a></p>
+                </address>
+            </div>
+            <div class="footer-section">
+                <h3>Business Hours</h3>
+                <p>Monday - Saturday: 10:00 AM - 7:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Shop</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="#appointments">Book Appointment</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shivam Opticals. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Blog category filtering
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const blogPosts = document.querySelectorAll('.blog-post');
+
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const category = button.dataset.category;
+                
+                // Show/hide posts based on category
+                blogPosts.forEach(post => {
+                    if (category === 'all' || post.querySelector('.category-tag').textContent.toLowerCase() === category) {
+                        post.style.display = 'block';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
